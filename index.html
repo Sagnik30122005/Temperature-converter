@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="converter" aria-labelledby="page-title">
+      <div class="header">
+        <p class="eyebrow">Instant Conversion</p>
+        <h1 id="page-title">Temperature Converter</h1>
+        <p class="subtitle">
+          Convert between Celsius, Fahrenheit, and Kelvin as you type.
+        </p>
+      </div>
+
+      <form class="temperature-form" aria-label="Temperature converter">
+        <label class="field">
+          <span>Celsius</span>
+          <div class="input-wrap">
+            <input
+              id="celsius"
+              type="number"
+              inputmode="decimal"
+              placeholder="0"
+              aria-label="Temperature in Celsius"
+            />
+            <strong aria-hidden="true">°C</strong>
+          </div>
+        </label>
+
+        <label class="field">
+          <span>Fahrenheit</span>
+          <div class="input-wrap">
+            <input
+              id="fahrenheit"
+              type="number"
+              inputmode="decimal"
+              placeholder="32"
+              aria-label="Temperature in Fahrenheit"
+            />
+            <strong aria-hidden="true">°F</strong>
+          </div>
+        </label>
+
+        <label class="field">
+          <span>Kelvin</span>
+          <div class="input-wrap">
+            <input
+              id="kelvin"
+              type="number"
+              inputmode="decimal"
+              placeholder="273.15"
+              aria-label="Temperature in Kelvin"
+            />
+            <strong aria-hidden="true">K</strong>
+          </div>
+        </label>
+      </form>
+
+      <p id="message" class="message" role="status" aria-live="polite">
+        Enter a value in any field.
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
